@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    
+}
+#card{
+    border-radius: 10px;
+    height: 600px;
+    width: 300px;
+    position: relative;
+    background-color: rgb(204, 124, 81);
+    padding: 10px;
+    text-align: center;
+   
+}
+#card img{
+    height: 70%;
+    width:100% ;
+    object-fit: cover;
+    
+    object-position: center;
+    border-radius: 10px;
+}
+#card h1{
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 700;
+}
+#card h5{
+    font-size: 20px;
+    margin: 10px;
+    color: blueviolet;
+}
+#card h6{
+    margin: 10px;
+}
+#card button{
+    background-color: cadetblue;
+    color: white;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#card #remove{
+    background-color:#dadada;
+    color: #111;
+   visibility: hidden;
+
+}
+#card #love{
+    color: white;
+    font-size: 75px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(30%,-90%) scale(0);
+    opacity: 0.8;
+    transition: transform ease 0.4s;
+}
+#card #like{
+    color: white;
+    font-size: 25px;
+    margin-left: -150px;
+}
+#card #comment{
+    color: white;
+    font-size: 25px;
+   margin-left: 10px;
+}
+#card #send{
+    color: white;
+    font-size: 25px;
+   margin-left: 20px;
+}
